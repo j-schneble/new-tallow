@@ -57,16 +57,16 @@ export default function Container({
 
         
 
-   <nav className='sticky top-0  bg-black border-b border-b-white/25 flex items-center justify-between z-[50] w-full mx-auto max-w-7xl'>
+   <nav className='sticky top-0  bg-black border-b border-b-white/25 flex text-left justify-between z-[50] w-full mx-auto max-w-7xl'>
    <div
-        className={`sticky w-full  md:top-4 max-w-7xl    mx-auto flex justify-between items-center     ${
+        className={`sticky w-full  md:top-4 max-w-7xl       ${
           scrolled
             ? " "
             : "bg-white/0"
         }  transition-all`}
       >
-        <div className="flex items-center justify-between mx-3 mt-2 mb-2 top-mob xl:mx-auto">
-          <Link href="/" className="flex items-center mx-4 my-2 text-xl cmd-mob">
+        <div className="flex mx-3 mt-2 mb-2 text-left top-mob xl:mx-auto">
+          <Link href="/" className="flex mx-4 my-2 text-xl text-left left-1 cmd-mob">
           
           <Image
                 src={tallow}
@@ -76,7 +76,7 @@ export default function Container({
                 className=""
                 alt='Summary image'
             />
-            <h1 className='px-6 text-xl font-light text-white font-sfprodisplayregular '> Tallowhill Home Services </h1>
+            <h1 className='flex px-6 text-xl font-light text-white font-sfprodisplayregular '> Tallowhill Home Services </h1>
           </Link>
           <div>
           
