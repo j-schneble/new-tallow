@@ -222,7 +222,7 @@ const Home: NextPage = () => {
                       
                    >  
                         <p>
-                        TV Installation/Hanging
+                        Plaster Repair
                  
                         </p>
                         </div>
