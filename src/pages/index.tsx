@@ -92,7 +92,7 @@ const Home: NextPage = () => {
  
  <div className='mt-16'>
     <div className='flex items-center text-center justify-evenly'>
-        <h1 className='font-semibold text-white text-8xl font-sfprodisplayregular'>Tallowhill Home Services</h1>
+        <h1 className='font-semibold text-white text-8xl font-sfprodisplayregular'>Callowhill Home Services</h1>
     </div>
     <div className='flex items-center mt-3 text-center justify-evenly'>
     <div className='grid items-center w-1/2 grid-cols-3 gap-2 px-4 text-center justify-evenly'>

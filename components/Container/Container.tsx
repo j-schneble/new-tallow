@@ -77,7 +77,7 @@ export default function Container({
                 className=""
                 alt='Summary image'
             />
-            <h1 className='flex px-6 text-xl font-light text-white font-sfprodisplayregular '> Tallowhill Home Services </h1>
+            <h1 className='flex px-6 text-xl font-light text-white font-sfprodisplayregular '> Callowhill Home Services </h1>
           </Link>
           <div>
             
