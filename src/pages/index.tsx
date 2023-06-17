@@ -441,7 +441,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel textColor={'black'}  fontFamily='sfprodisplayregular' key={'Project'}>What service(s) are you looking for</FormLabel>
+                                         <FormLabel textColor={'white'}  fontFamily='sfprodisplayregular' key={'Project'}>What service(s) are you looking for</FormLabel>
                                          <Input
                                              id='project'
                                              type={'project'}
@@ -459,7 +459,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel  textColor={'black'}   fontFamily='sfprodisplayregular' key={'email'}>Email</FormLabel>
+                                         <FormLabel  textColor={'white'}   fontFamily='sfprodisplayregular' key={'email'}>Email</FormLabel>
                                          <Input
                                              id='email'
                                              type={'email'}
@@ -477,7 +477,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel  textColor={'black'}  fontFamily='sfprodisplayregular' key={'message'}>Additional details and when you are available</FormLabel>
+                                         <FormLabel  textColor={'white'}  fontFamily='sfprodisplayregular' key={'message'}>Additional details and when you are available</FormLabel>
                                          <Input
                                              id='message'
                                              type={'text'}
@@ -828,7 +828,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel textColor={'black'}  fontFamily='sfprodisplayregular' key={'Project'}>What service(s) are you looking for</FormLabel>
+                                         <FormLabel textColor={'white'}  fontFamily='sfprodisplayregular' key={'Project'}>What service(s) are you looking for</FormLabel>
                                          <Input
                                              id='project'
                                              type={'project'}
@@ -846,7 +846,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel  textColor={'black'}   fontFamily='sfprodisplayregular' key={'email'}>Email</FormLabel>
+                                         <FormLabel  textColor={'white'}   fontFamily='sfprodisplayregular' key={'email'}>Email</FormLabel>
                                          <Input
                                              id='email'
                                              type={'email'}
@@ -864,7 +864,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel  textColor={'black'}  fontFamily='sfprodisplayregular' key={'message'}>Additional details and when you are available</FormLabel>
+                                         <FormLabel  textColor={'white'}  fontFamily='sfprodisplayregular' key={'message'}>Additional details and when you are available</FormLabel>
                                          <Input
                                              id='message'
                                              type={'text'}
@@ -1060,7 +1060,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel textColor={'black'}  fontFamily='sfprodisplayregular' key={'Project'}>What service(s) are you looking for</FormLabel>
+                                         <FormLabel textColor={'white'}  fontFamily='sfprodisplayregular' key={'Project'}>What service(s) are you looking for</FormLabel>
                                          <Input
                                              id='project'
                                              type={'project'}
@@ -1078,7 +1078,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel  textColor={'black'}   fontFamily='sfprodisplayregular' key={'email'}>Email</FormLabel>
+                                         <FormLabel  textColor={'white'}   fontFamily='sfprodisplayregular' key={'email'}>Email</FormLabel>
                                          <Input
                                              id='email'
                                              type={'email'}
@@ -1096,7 +1096,7 @@ const Home: NextPage = () => {
                                          />
                                      </FormControl>
                                      <FormControl isRequired mt={6}>
-                                         <FormLabel  textColor={'black'}  fontFamily='sfprodisplayregular' key={'message'}>Additional details and when you are available</FormLabel>
+                                         <FormLabel  textColor={'white'}  fontFamily='sfprodisplayregular' key={'message'}>Additional details and when you are available</FormLabel>
                                          <Input
                                              id='message'
                                              type={'text'}
