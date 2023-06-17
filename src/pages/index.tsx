@@ -27,6 +27,7 @@ import emailjs from 'emailjs-com';
 
 import Popup from 'reactjs-popup';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
 
@@ -89,8 +90,28 @@ const Home: NextPage = () => {
 
 <Container>
  
- <div className='mt-8'>
- <ProfileSection /> 
+ <div className='mt-16'>
+    <div className='flex items-center text-center justify-evenly'>
+        <h1 className='font-semibold text-white text-8xl font-sfprodisplayregular'>Tallowhill Home Services</h1>
+    </div>
+    <div className='flex items-center mt-3 text-center justify-evenly'>
+    <div className='grid items-center w-1/2 grid-cols-3 gap-2 px-4 text-center justify-evenly'>
+    <div className=''>
+        <h1 className='p-2 text-4xl font-light text-zinc-400 font-sfprodisplayregular'>Artists</h1>
+    </div>
+    
+    <div className=''>
+        <h1 className='p-2 text-4xl font-light border-l border-r border-l-white/25 border-r-white/25 text-zinc-400 font-sfprodisplayregular'>Designers</h1>
+    </div>
+    <div className=''>
+        <h1 className='p-2 text-4xl font-light text-zinc-400 font-sfprodisplayregular'>Craftspeople</h1>
+    </div>
+    </div>
+    </div>
+ 
+           
+   
+ {/* <ProfileSection />  */}
  </div>
     
 
@@ -101,9 +122,14 @@ const Home: NextPage = () => {
 
               <div className='flex items-center w-2/3 pb-16 text-xl italic tracking-wide text-center text-gray-300 border-b we-mob border-b-black/10 font-sfprodisplayregular '>
                           <h1>
-                   We are a team of home improvement specialists, committed to delivering the highest quality service with a beautiful result four our customers. 
+                   We are a team of home improvement specialists, committed to delivering the highest quality service with a beautiful result four our customers. <span className='flex text-right justify-evenly'><Link href="/about" className="flex mx-4 my-2 text-xl cmd-mob">
+          
+          
+          <h1 className='flex px-6 text-xl font-light text-orange-500 font-sfprodisplayregular '> Learn More → </h1>
+        </Link></span>
                    </h1>
            
+        
                    
                    {/* <div className='flex items-center mt-2 mb-4 tracking-wide text-center text-slate-500 we-mob2 font-sfprodisplaylight '>
                      <h1>

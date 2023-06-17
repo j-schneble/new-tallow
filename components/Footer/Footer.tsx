@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
   import { IoLogoGithub , IoLogoLinkedin } from 'react-icons/io'
-  
+  import {RiInstagramLine, RiFacebookBoxFill} from 'react-icons/ri'
   const iconProps = {
     variant: "ghost",
     size: "lg",
@@ -27,7 +27,7 @@ import Link from 'next/link'
                   rel='noreferrer'
                   aria-label='Twitter'
                 >
-                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 fill-current text-white/50 hover:text-white/25' />
+                  <RiInstagramLine className='w-8 h-auto text-white transition-all duration-200 fill-current hover:text-white/25' />
                 </Link>
                 <Link
                   href='https://google.com/'
@@ -36,9 +36,9 @@ import Link from 'next/link'
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 fill-current text-white/50 hover:text-white/25' />
+                  <RiFacebookBoxFill className='w-8 h-auto text-white transition-all duration-200 fill-current hover:text-white/25' />
                 </Link>
-          </div> */}
+          </div>  */}
 
         <p className='m-auto text-lg text-white/50 font-sfprodisplayregular'
             
@@ -47,7 +47,7 @@ import Link from 'next/link'
             
               
             >
-             Copyright © Tallowhill Home Services {" "}
+             Copyright © THIRTY EIGHT LLC d/b/a Callowhill Home Services {" "}
             </p>
       </div>
       </div>

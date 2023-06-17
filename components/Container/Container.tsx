@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 import { cn } from '../../lib/classNames'
 import Image from "next/image";
 import tallow from '../../public/blacklogo.png'
+import {RiInstagramLine, RiFacebookBoxFill} from 'react-icons/ri'
 
 interface IContainerProps {
   back?: {
@@ -79,10 +80,34 @@ export default function Container({
             <h1 className='flex px-6 text-xl font-light text-white font-sfprodisplayregular '> Tallowhill Home Services </h1>
           </Link>
           <div>
+            
+            
+  
           
           </div>
           </div>
           </div>
+          <div className='flex flex-row mt-4 mr-8 space-x-6 item-center '>
+          <a
+                  href='https://www.instagram.com/callowhillhomeservices/'
+                  className='visible lit2'
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='Github'
+                >
+                  <RiInstagramLine className='h-auto transition-all duration-200 rounded-sm fill-current text-zinc-500 w-7 ' />
+                </a>   
+                <a
+                  href='https://callowhillhomeservices.com/about/'
+                  className='visible lit2'
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='Twitter'
+                >
+                  <RiFacebookBoxFill className='h-auto transition-all duration-200 rounded-md fill-current text-zinc-500 w-7 ' />
+                </a>
+                
+              </div>
           </nav>
             <main
               className={cn(
