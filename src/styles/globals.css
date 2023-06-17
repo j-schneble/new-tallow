@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@font-face {
+  font-family: "sfprodisplayregular";
+  src: url('../../components/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sfprodisplaybold";
+  src: url('../../components/fonts/SF-Pro-Display/SF-Pro-Display-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF-Pro-Display-Light";
+  src: url('../../components/fonts/SF-Pro-Display/SF-Pro-Display-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Heavy";
+  src: url('../../components/fonts/SF-Pro-Display/SF-Pro-Display-Heavy.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+@media (max-width: 671px) {
+  .img-mob{
+ width: max-content;
+
+
+  }
+  }
+  .popup {
+    content:'';
+   
+   padding-left: 2px;
+   padding-right: 2px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+   
+   
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  }
+  .shad {
+    box-shadow: rgba(165, 180, 252, 0.4) 0px 5px, rgba(165, 180, 252, 0.3) 0px 10px, rgba(165, 180, 252, 0.2) 0px 15px, rgba(165, 180, 252, 0.1) 0px 20px, rgba(165, 180, 252, 0.05) 0px 25px;
+  }
+
+  @media (max-width: 671px) {
+    .we-mob{
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    place-content: center;
+    justify-content: space-evenly;
+    line-height: 3.75rem;
+    width: fit-content;
+
+    }
+    }
