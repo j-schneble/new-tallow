@@ -4,7 +4,7 @@ import React from 'react'
 import Contact from '../../section/contact'
 import { useRouter } from 'next/navigation';
 import type { NextPage } from 'next';
-import IconPrices from '../../service/iconPrices'
+
 import ProfileSection from '../../section/ProfileSection';
 import wetall from '../../public/weare.png'
 import rates from '../../public/raa.png'
