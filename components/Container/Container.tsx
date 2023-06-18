@@ -84,6 +84,9 @@ export default function Container({
           </div>
           </div>
            <div className='flex flex-row mt-4 mr-8 space-x-6 item-center '>
+            <p className='text-lg font-light text-white font-sfprodisplayregular'>
+              CALL US AT <span className='px-2 text-lg font-medium text-orange-500 font-sfprodisplayregular'>(404)-402-4404</span>
+            </p>
           <a
                   href='https://www.instagram.com/callowhillhomeservices/'
                   className='visible lit2'
