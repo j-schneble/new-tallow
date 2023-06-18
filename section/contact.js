@@ -80,9 +80,8 @@ const Contact = () => {
                
                     <SlideFade in offsetX={80}>
                         <div className='flex items-center text-center justify-evenly bg-zinc-800'>
-                            <div className='rounded-sm  bg-white/90'
+                            <div className='rounded-sm bg-white/90'
                               
-                                backdropFilter={'10px'}
                              
                                
                               

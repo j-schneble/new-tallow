@@ -4,27 +4,17 @@ import React from 'react'
 import Contact from '../../section/contact'
 import { useRouter } from 'next/navigation';
 import type { NextPage } from 'next';
-
-import ProfileSection from '../../section/ProfileSection';
 import wetall from '../../public/weare.png'
 import rates from '../../public/raa.png'
 import hours from '../../public/hoo.png'
 import {
-  
-
     FormControl,
     FormLabel,
-   
-
     Button,
     Input,
-
- 
-    useToast
-    
+    useToast   
 } from "@chakra-ui/react";
 import emailjs from 'emailjs-com';
-
 import Popup from 'reactjs-popup';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -92,275 +82,179 @@ const Home: NextPage = () => {
  
  <div className='mt-16'>
     <div className='flex items-center text-center justify-evenly'>
-        <h1 className='font-semibold text-white text-8xl font-sfprodisplayregular'>Callowhill Home Services</h1>
+        <h1 className='font-semibold text-white text-8xl title-mob font-sfprodisplayregular'>Callowhill Home Services</h1>
     </div>
     <div className='flex items-center mt-3 text-center justify-evenly'>
-    <div className='grid items-center w-1/2 grid-cols-3 gap-2 px-4 text-center justify-evenly'>
+    <div className='grid items-center w-1/2 grid-cols-3 gap-2 px-4 text-center mob-width justify-evenly'>
     <div className=''>
-        <h1 className='p-2 text-4xl font-light text-zinc-400 font-sfprodisplayregular'>Artists</h1>
+        <h1 className='p-2 text-4xl font-light no-pad text-zinc-400 font-sfprodisplayregular'>Artists</h1>
     </div>
     
     <div className=''>
-        <h1 className='p-2 text-4xl font-light border-l border-r border-l-white/25 border-r-white/25 text-zinc-400 font-sfprodisplayregular'>Designers</h1>
+        <h1 className='p-2 text-4xl font-light border-l border-r small-title border-l-white/25 border-r-white/25 text-zinc-400 font-sfprodisplayregular'>Designers</h1>
     </div>
     <div className=''>
-        <h1 className='p-2 text-4xl font-light text-zinc-400 font-sfprodisplayregular'>Craftspeople</h1>
+        <h1 className='p-2 text-4xl font-light small-title text-zinc-400 font-sfprodisplayregular'>Craftspeople</h1>
     </div>
     </div>
     </div>
- 
-           
-   
- {/* <ProfileSection />  */}
  </div>
-    
-
-     
+ 
           <div className='flex items-center mb-10 text-center border-b rounded-sm border-b-white/10 justify-evenly '>
-               
-          
-
               <div className='flex items-center w-2/3 pb-16 text-xl italic tracking-wide text-center text-gray-300 border-b we-mob border-b-black/10 font-sfprodisplayregular '>
-                          <h1>
-                   We are a team of home improvement specialists, committed to delivering the highest quality service with a beautiful result four our customers. <span className='flex text-right justify-evenly'><Link href="/about" className="flex mx-4 my-2 text-xl cmd-mob">
-          
-          
-          <h1 className='flex px-6 text-xl font-light text-orange-500 font-sfprodisplayregular '> Learn More → </h1>
+                          <h1 className='team-mob'>
+                   We are a team of home improvement specialists, committed to delivering the highest quality service with a beautiful result four our customers. 
+                   <span className='flex text-right justify-evenly'><Link href="/about" className="flex mx-4 my-2 text-xl cmd-mob">
+          <h1 className='flex px-6 text-xl font-light text-orange-500 learn-mob font-sfprodisplayregular '> 
+          Learn More → </h1>
         </Link></span>
                    </h1>
-           
-        
-                   
-                   {/* <div className='flex items-center mt-2 mb-4 tracking-wide text-center text-slate-500 we-mob2 font-sfprodisplaylight '>
-                     <h1>
-                     We are committed to delivering the highest quality service with a beautiful result four our customers. 
-                     </h1>  
-                 
-           
-             </div>  */}
-            
-              
-
            </div>
-      
-    
-     
-                
- 
              </div>
-          
-           
-          
-{/*             
-          <div className='grid items-center justify-center grid-cols-1 mt-8 text-center '>  
-         
-          
-          
-                  </div>
-                  <div className='flex items-center p-4 mb-3 text-center bg-gray-500 rounded-sm justify-evenly'
-                 
-                 >
-                 <h1 className='text-lg italic font-light text-slate-200 font-sfprodisplayregular '>
-                 In most cases, we can provide a firm estimate after just a quick phone call. We would never exceed our estimate without your approval.
-                 </h1>
-                 <div className='grid items-center w-1/4 grid-cols-1 text-center border-2 rounded-lg bg-slate-100 border-slate-400 justify-evenly '>
-          <h1 className='flex items-center py-4 text-xl text-center text-gray-900 font-sfprodisplayregular justify-evenly ' >  👉 Request a  Quote Today </h1>
-          </div>
-            </div>
-        
-      */}
    
           <div className='px-2 border-t min-w-max h-max border-black/10'>
-
-        
- 
             <div className='' >
             <div className='flex '>                             
                     <h1
-                     className='pb-4 text-4xl tracking-wide text-orange-500 font-sfprodisplayregular'
+                     className='pb-4 text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
                     >
                         Handyman Services 
                     </h1>
                 </div>
-
             <div className='flex '>
-                <h1 className='p-1 pl-2 mt-1 mb-4 ml-1 text-lg tracking-wider text-white border-l font-sfprodisplaylight border-l-white/25'>
+                <h1 className='p-1 pl-2 mt-1 mb-4 ml-1 text-lg tracking-wider text-white border-l section-description font-sfprodisplaylight border-l-white/25'>
                 <span className=''>Professional</span> and <span className=''>dependable </span>handyman service in Philadelphia and the surrounding region.
                 </h1>                      
             </div>                  
             </div>
-            <div className='flex items-center px-6 mt-12 text-center justify-evenly'
-         >
-            
-                       <div className='flex items-center my-4 w-max'>
-
-
-<Image
-              src={wetall}
-              width={950}
-              height={850}
-              quality="100"
-              className=""
-              alt='Summary image'
-          />
-
-</div>
-           
-            </div> 
-        
-            <div className='grid grid-cols-4 p-4 mt-4 mb-10 rounded-md '>
-                      <div
-                    className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+            <div className='flex items-center px-6 mt-12 text-center justify-evenly'>
+            <div className='flex items-center my-4 w-max'>
+                <Image
+                    src={wetall}
+                    width={950}
+                    height={850}
+                    quality="100"
+                    className="tall-mob"
+                    alt='Summary image'
+                />
+            </div>          
+            </div>        
+            <div className='grid grid-cols-3 p-4 mt-4 mb-10 rounded-md grid-mob '>
+               <div
+                className=
+                'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
-                        TV Installation/Hanging  
+                        TV Installation
                         </p>
                         </div>
                         <div
-                      className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                    className=
+                    'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '                     >  
                         <p>
-                        Plaster Repair
-                 
+                        TV Hanging  
                         </p>
                         </div>
                         <div
-                     className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                      className=
+                      'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
+                        <p>
+                        Plaster Repair                
+                        </p>
+                        </div>
+                        <div
+                     className=
+                     'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular ' >  
                         <p>
                        Ceiling Fans
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                        Hanging Artwork
-                 
-                        </p>
+                       </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
-                        Shades + Blinds
-                 
+                        Shades                  
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
+                        <p>
+                        Blinds                 
+                        </p>
+                        </div>
+                        <div className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular'>  
                         <p>
                         Wood Floor Refinishing
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular ' >  
                         <p>
-                        Drywall + Plaster Repair
-                 
+                        Drywall Repair
                         </p>
                          </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Shelves
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Painting
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
-                        <p>
-                            
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
+                        <p>    
                         Door Installation
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Plumbing
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Garbage Disposal
-                 
                         </p>
                         </div>
-                   
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '  >  
                         <p>
                         Carpentry
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Welding Repairs
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Furniture Assembly
-                 
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
+                        <div className=
+                        'flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm grid-text bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '>  
                         <p>
                         Power Washing
-                 
                         </p>
-                        </div>
-                       
-                </div>
-                
-            
+                        </div>                       
+                </div>           
     <div className='grid items-center justify-center grid-cols-3 pb-20 mt-16 border-b border-b-white/25' >
     <div className='flex items-center justify-evenly'>
-
-
-<Image
+        <Image
               src={rates}
               width={300}
               height={300}
@@ -368,16 +262,11 @@ const Home: NextPage = () => {
               className=""
               alt='Summary image'
           />
-
 </div>
-<div className='flex items-center pb-20 mb-20 ml-1 text-center justify-evenly '
-              
-
-              >
-                  <Popup trigger={ 
-     <button
-         aria-label='Github'
-     >
+<div className='flex items-center pb-20 mb-20 ml-1 text-center justify-evenly '>
+    <Popup trigger={ 
+        <button
+         aria-label='Github'>
          <div className='flex items-center px-4 py-3 text-center border rounded-md bg-zinc-950/50 border-white/10 justify-evenly'>
          <h1 className='text-lg text-orange-500'
                      >
@@ -520,102 +409,24 @@ const Home: NextPage = () => {
              </div>
     
 <div className='flex items-center justify-evenly'>
-
-
-<Image
-              src={hours}
-              width={300}
-              height={300}
-              quality="100"
-              className=""
-              alt='Summary image'
+    <Image
+        src={hours}
+        width={300}
+        height={300}
+        quality="100"
+        className=""
+        alt='Summary image'
           />
 
 </div>
-
     </div>
-
-   
-            
-            {/* <div className='mt-6 '>                  
-                <div className='grid grid-cols-2 p-6 '>
-                    <div
-                  className='p-2 '
-                   
-                    >
-                        <h1 className='mb-2 text-xl font-semibold text-center text-slate-700 font-sfprodisplayregular'>
-                           Rates
-                        </h1>
-                        <div className='grid items-center grid-cols-1 p-1 text-center bg-slate-200 '
-                       >
-                        <div className='grid items-center grid-cols-1 text-xl tracking-wide text-center font-sfprodisplaybold text-slate-700'
->
-                            <h1>First hour</h1>
-                        </div>                        
-                        <div className='grid items-center grid-cols-1 text-lg tracking-wide text-center text-slate-700 font-sfprodisplayregular'  >
-                            <h1>$105</h1>
-                        </div>
-                        </div>
-                        <div className='p-1 bg-slate-200'
-                       >                    
-                        <div className='grid items-center grid-cols-1 text-xl tracking-wide text-center font-sfprodisplaybold text-slate-700'
-                           >
-                            <h1>Hours after</h1>
-                        </div>                        
-                        <div className='grid items-center grid-cols-1 text-lg tracking-wide text-center text-slate-400 font-sfprodisplayregular'
-                                          
-                       >
-                            <h1>$85</h1>
-                        </div>
-             
-                    </div>
-                    </div>
-                   
-                    <div
-                  className='p-2 '
-                   
-                    >
-                    
-                    <h1 className='mb-2 text-xl font-semibold text-center text-slate-800 font-sfprodisplayregular'>
-                           Hours
-                        </h1>
-                        <div className='grid items-center grid-cols-1 p-1 text-center bg-slate-700'
-                       >
-                        <div className='grid items-center grid-cols-1 text-xl tracking-wide text-center font-sfprodisplaybold text-slate-100'
->
-                            <h1>Monday - Friday</h1>
-                        </div>                        
-                        <div className='grid items-center grid-cols-1 text-lg tracking-wide text-center text-slate-100 font-sfprodisplayregular'  >
-                            <h1>9am - 6pm</h1>
-                        </div>
-                        </div>
-                        <div className='p-1 bg-slate-700'
-                       >                    
-                        <div className='grid items-center grid-cols-1 text-xl tracking-wide text-center font-sfprodisplaybold text-slate-100'
-                           >
-                            <h1>Saturday</h1>
-                        </div>                        
-                        <div className='grid items-center grid-cols-1 text-lg tracking-wide text-center text-slate-100 font-sfprodisplayregular'
-                                          
-                       >
-                            <h1>9am - 1pm</h1>
-                        </div>
-             
-                    </div>
-                </div>
-                </div>
-
-            </div>
-            
-           
-     */}
-        </div>
+      </div>
         <div className='px-2 py-4 '>
      
             <div>
             <div className='flex'>                             
                     <h1
-                        className='text-4xl tracking-wide text-orange-500 font-sfprodisplayregular'
+                        className='text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
                     >
                         Custom Carpentry
                     </h1>
@@ -629,9 +440,9 @@ const Home: NextPage = () => {
                 </div> 
                        </div>  
             </div>
-            <div className='grid grid-cols-3 p-4 mt-2 mb-10 rounded-md '>
+            <div className='grid grid-cols-3 p-4 mt-2 mb-10 rounded-md grid-mob2 '>
                       <div
-                    className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+                    className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -639,7 +450,7 @@ const Home: NextPage = () => {
                         </p>
                         </div>
                         <div
-                      className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+                      className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -648,7 +459,7 @@ const Home: NextPage = () => {
                         </p>
                         </div>
                         <div
-                     className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+                     className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -657,7 +468,7 @@ const Home: NextPage = () => {
                         </p>
                         </div>
                         <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+ className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                    >  
                         <p>
                         Shelving
@@ -665,25 +476,17 @@ const Home: NextPage = () => {
                         </p>
                         </div>
                         <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+ className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
-                        Storage Solutions
+                        Storage 
                  
                         </p>
                         </div>
+                     
                         <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
-                        <p>
-                        Floating Shelves
-                 
-                        </p>
-                        </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+ className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -692,7 +495,7 @@ const Home: NextPage = () => {
                         </p>
                          </div>
                         <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+ className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -701,7 +504,7 @@ const Home: NextPage = () => {
                         </p>
                         </div>
                         <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+ className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -710,7 +513,7 @@ const Home: NextPage = () => {
                         </p>
                         </div>
                         <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
+ className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm range-main2 bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
                       
                    >  
                         <p>
@@ -719,43 +522,27 @@ const Home: NextPage = () => {
                  
                         </p>
                         </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
-                        <p>
-                        Reclaimed Wood
-                 
-                        </p>
-                        </div>
-                        <div
- className='flex items-center p-2 mt-1 text-sm font-semibold tracking-wide text-center text-white border rounded-sm bg-zinc-950/90 border-white/10 justify-evenly font-sfprodisplayregular '
-                      
-                   >  
-                        <p>
-                        Live Edge
-                 
-                        </p>
-                        </div>
+                    
+                   
                    
                 </div>
                 
-          <div className='grid grid-cols-2 py-6 pb-20 border-b border-b-white/25 '>
-          <div className='p-1 '>
-          <p className='py-3 antialiased text-white text-medium text-sfprodisplayregular'>
-          <span className='px-2 text-xs text-orange-500'>●</span>  
+          <div className='grid grid-cols-2 py-6 pb-20 border-b carp-grid border-b-white/25 '>
+          <div className='p-1 line-order'>
+          <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
+          <span className='px-2 text-xs text-orange-500 o-circle'>●</span>  
             We meet to discuss your needs, ideas , and budget.</p>
-            <p className='py-3 antialiased text-white text-medium text-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500'>●</span> 
+            <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
+            <span className='px-2 text-xs text-orange-500 o-circle'>●</span> 
             We provide you with a detailed quote and design drawing.</p>
-            <p className='py-3 antialiased text-white text-medium text-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500'>●</span>  
+            <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
+            <span className='px-2 text-xs text-orange-500 o-circle'>●</span>  
             Upon your acceptance, we provide you with a delivery/installation date. </p>
-            <p className='py-3 antialiased text-white text-mediumtext-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500'>●</span>  
+            <p className='py-3 antialiased text-white line-text text-mediumtext-sfprodisplayregular'>
+            <span className='px-2 text-xs text-orange-500 o-circle'>●</span>  
             Construction is completed in our shop, to minimize time in your building.</p>
-            <p className='py-3 antialiased text-white text-medium text-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500'>●</span> 
+            <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
+            <span className='px-2 text-xs text-orange-500 o-circle'>●</span> 
             We deliver and/or install your project as promised.</p>
             <div className='flex mt-2 '
               
@@ -907,15 +694,15 @@ const Home: NextPage = () => {
              </div>
           </div> 
           
-          <div className='py-4 border rounded-sm bg-zinc-950/90 border-white/25'><p className='flex items-center justify-center text-lg text-center text-white font-sfprodisplayregular'>We work with a range of wood and other materials,</p>
-          <p className='flex items-center justify-center text-center text-orange-500 text-md font-sfprodisplayregular'> including:</p>
+          <div className='py-4 border rounded-sm bg-zinc-950/90 border-white/25'><p className='flex items-center justify-center text-lg text-center text-white range-1 font-sfprodisplayregular'>We work with a range of wood and other materials,</p>
+          <p className='flex items-center justify-center text-center text-orange-500 text-md font-sfprodisplayregular range-2'> including:</p>
           <div className=''>
             
          
          
           <div className='grid items-center grid-cols-2 px-6 py-4 rounded-md '>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >     
                         <p>
@@ -927,32 +714,48 @@ const Home: NextPage = () => {
              
 
                     <div
-                     className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+                     className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
-                            Softwoods + Hardwoods
+                            Softwoods 
+                        </p>
+                    </div>
+                    <div
+                     className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
+                       
+                    >  
+                        <p>
+                           Hardwoods
                         </p>
                     </div>
                  
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
-                         Highest quality plywood
+                          Plywood
                         </p>
                     </div>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
-                        Live-edge + reclaimed wood
+                        Live-edge wood 
                         </p>
                     </div>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
+                       
+                    >  
+                        <p>
+                         Reclaimed wood
+                        </p>
+                    </div>
+                    <div
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
@@ -960,11 +763,27 @@ const Home: NextPage = () => {
                         </p>
                     </div>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
-                         Steel, aluminum, and brass
+                         Steel
+                        </p>
+                    </div>
+                    <div
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
+                       
+                    >  
+                        <p>
+                      Aluminum
+                        </p>
+                    </div>
+                    <div
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
+                       
+                    >  
+                        <p>
+                        Brass
                         </p>
                     </div>
                 </div>
@@ -976,7 +795,7 @@ const Home: NextPage = () => {
         <div className='px-2 py-4 '>
         <div className='flex'>                             
                     <h1
-                        className='pb-1 text-4xl tracking-wide text-orange-500 font-sfprodisplayregular'
+                        className='pb-1 text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
                     >
                         Home Improvement
                     </h1>
@@ -1137,15 +956,15 @@ const Home: NextPage = () => {
                  
 
              </div>
-            <div className='py-4 border rounded-sm bg-zinc-950/90 border-white/25'><p className='flex items-center justify-center text-lg text-center text-white font-sfprodisplayregular'>We work with a range of wood and other materials,</p>
-          <p className='flex items-center justify-center text-center text-orange-500 text-md font-sfprodisplayregular'> including:</p>
+            <div className='py-4 border rounded-sm bg-zinc-950/90 border-white/25'><p className='flex items-center justify-center text-lg text-center text-white range-1 font-sfprodisplayregular'>We work with a range of wood and other materials,</p>
+          <p className='flex items-center justify-center text-center text-orange-500 range-2 text-md font-sfprodisplayregular'> including:</p>
           <div className=''>
             
          
          
           <div className='grid items-center grid-cols-2 px-6 py-4 rounded-md '>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >     
                         <p>
@@ -1157,7 +976,7 @@ const Home: NextPage = () => {
              
 
                     <div
-                     className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+                     className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
@@ -1166,24 +985,23 @@ const Home: NextPage = () => {
                     </div>
                  
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
-                        Kitchen + Bathroom Renovations
+                        Kitchen reno
                         </p>
                     </div>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
-                        Kitchen Islands
+                        Bathroom reno
                         </p>
                     </div>
-                 
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
@@ -1191,7 +1009,7 @@ const Home: NextPage = () => {
                         </p>
                     </div>
                     <div
-  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm text-black/90 justify-evenly font-sfprodisplayregular '
+  className='flex items-center p-2 mx-2 my-2 mt-1 text-sm font-semibold tracking-wide text-center bg-white rounded-sm range-main text-black/90 justify-evenly font-sfprodisplayregular '
                        
                     >  
                         <p>
@@ -1208,7 +1026,7 @@ const Home: NextPage = () => {
 <div className='' >
 <div className='flex '>                             
         <h1
-         className='py-4 text-4xl tracking-wide text-orange-500 font-sfprodisplayregular'
+         className='py-4 text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
         >
             Contact Us
         </h1>

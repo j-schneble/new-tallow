@@ -9,16 +9,16 @@ export function SEO() {
       <DefaultSeo {...defaultSEO} />
 
       <Head>
-        <link rel='icon' href='/static/favicons/favicon.ico' sizes='any' />
+        <link rel='icon'  href='../../public/blacklogo.png' sizes='any' />
         <link
           rel='icon'
-          href='/images/favicons/favicon.svg'
+          href='../../public/blacklogo.png'
           type='image/svg+xml'
           sizes='any'
         />
         <link
           rel='apple-touch-icon'
-          href='/static/favicons/apple-touch-icon.png'
+          href='../../public/blacklogo.png'
         />
         <link rel='manifest' href='/static/favicons/site.webmanifest' />
       </Head>
