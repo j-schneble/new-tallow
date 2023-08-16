@@ -49,6 +49,16 @@
   }
 }
 
+.main {
+  width: 100vw;
+  min-height: 100vh;
+
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  padding: 90px 24px 100px 24px;
+  pointer-events: none;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -164,14 +174,16 @@ max-width: max-content;
       font-size: 5.75rem;
     }
   }
-  /* @media (max-width: 671px) {
+   @media (max-width: 671px) {
     .section-description{
-      font-size: 2.5rem;
-      line-height: 3.2rem;
-      padding: 2rem;
-      width:85%;
+      display:none;
     }
-  } */
+  } 
+  @media (max-width: 671px) {
+    .handy-grid{
+      margin-left: 1rem;
+    }
+  } 
   /* @media (max-width: 671px) {
     .tall-mob{
      max-width: max-content;
@@ -182,11 +194,14 @@ max-width: max-content;
     .grid-mob{
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: 95%;
     }
   }
   @media (max-width: 671px) {
     .grid-mob2{
       display: grid;
+     width: 95%;
+     margin-top: 4rem;
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
@@ -241,6 +256,9 @@ max-width: max-content;
   }
   @media (max-width: 671px) {
     .range-main2{
+      display: flex;
+      text-align: left;
+      justify-content: left;
     font-size: 2.7rem;
     line-height: 3.25rem;
     padding-top: 1rem;
@@ -307,4 +325,41 @@ padding-left:0.15rem;
     width: fit-content;
 
     }
+  }
+@media (max-width: 671px) {
+      .display-mobile{
+     display:none;
     }
+  }
+
+.display-mobile{
+   display:block;
+  }
+  @media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
+
+  .mobileshow { 
+    display:none; 
+    }
+    @media screen and (max-width: 500px) {
+    .mobileshow { 
+    display:block; }
+    }
+  @media (max-width: 767px) {
+  .margin-mobile {
+    margin-top: 1.5rem
+  }
+}
+  @media (max-width: 767px) {
+    .hidden-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: center;
+      padding-bottom: 5rem;
+      justify-content: center;
+      gap: 10rem;
+    }
+  }
