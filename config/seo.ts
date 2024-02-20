@@ -2,17 +2,17 @@ export const baseUrl =
   process.env.NODE_ENV === 'production' ? 'https://schneble.io' : ''
 
 export const defaultSEO = {
-  title: 'Callowhill',
+  title: 'Tallowhill',
   description: 'Developer.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: baseUrl,
-    site_name: 'Callowhill',
+    site_name: 'Tallowhill',
     images: [
       {
         url: `${baseUrl}/blacklogo.png`,
-        alt: 'Callowhill',
+        alt: 'Tallowhill',
       },
     ],
   },
