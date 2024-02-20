@@ -1,11 +1,11 @@
-## Callowhill Home Services
->A front-end web application for a home improvement company
+## Tallowhill Home Services
+>A web application for a home improvement company
 
 
-<img width="1440" alt="callow" src="https://github.com/j-schneble/new-tallow/assets/60337134/9f8e4e0a-0631-4366-9230-5ff1c70868c5">
+<img width="1440" alt="Tallowhill-Home-Services" src="https://github.com/j-schneble/new-tallow/assets/60337134/485ffece-abb4-47fd-a2c4-667d0f823254">
 
 ## Demo
- [🔗 Callowhill Home Services]([https://tallowhill.vercel.app/](https://vercel.com/j-schneble/new-tallow-late))
+ [🔗 Tallowhill Home Services]([https://tallowhill.vercel.app/](https://vercel.com/j-schneble/new-tallow-late))
 
 ## Stack
 - [Next.js ](https://nextjs.org/docs)
