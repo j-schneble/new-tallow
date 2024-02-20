@@ -47,7 +47,7 @@ import Link from 'next/link'
             
               
             >
-             Copyright © THIRTY EIGHT LLC d/b/a Callowhill Home Services {" "}
+             Copyright © Tallow Services LLC d/b/a Tallowhill Home Services {" "}
             </p>
       </div>
       </div>

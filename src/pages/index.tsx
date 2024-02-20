@@ -4,7 +4,6 @@ import React from 'react'
 import Contact from '../../section/contact'
 import { useRouter } from 'next/navigation';
 import type { NextPage } from 'next';
-import wetall from '../../public/weare.png'
 import rates from '../../public/raa.png'
 import hours from '../../public/hoo.png'
 import {
@@ -83,10 +82,10 @@ const Home: NextPage = () => {
  
  <div className='mt-16'>
     <div className='flex items-center text-center justify-evenly'>
-        <h1 className='font-semibold text-white text-8xl title-mob font-sfprodisplayregular'>Callowhill <span className='text-transparent bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text'>Home Services </span></h1>
+        <h1 className='font-semibold text-white text-8xl title-mob font-sfprodisplayregular'>Tallowhill <span className='text-emerald-600 bg-clip-text'>Home Services </span></h1>
     </div>
     <div className="flex items-center text-center">
-      <h2 className="mt-5 text-4xl text-gray-400 ">
+      <h2 className="mt-8 text-3xl text-gray-400 ">
       We are a team of home improvement specialists, committed to delivering the highest quality service with a beautiful result four our customers. 
       </h2>
       </div>
@@ -101,10 +100,7 @@ const Home: NextPage = () => {
           <div className='flex items-center justify-center mb-12 text-center border-b rounded-sm border-b-white/10 '>
              
                           
-                   <span className='flex items-center mb-4 text-center justify-evenly'><Link href="/about" className="flex mx-4 my-2 text-xl cmd-mob">
-          <h1 className='flex px-6 text-xl font-light text-orange-500 learn-mob font-sfprodisplayregular '> 
-          Learn More → </h1>
-        </Link></span>
+                
                   
  
              </div>
@@ -113,7 +109,7 @@ const Home: NextPage = () => {
             <div className='' >
             <div className='flex '>                             
                     <h1
-                     className='pb-4 text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
+                     className='pb-4 text-4xl tracking-wide text-emerald-600 section-title font-sfprodisplayregular'
                     >
                         Handyman Services 
                     </h1>
@@ -124,18 +120,7 @@ const Home: NextPage = () => {
                 </h1>                      
             </div>                  
             </div>
-            <div className='flex items-center px-6 mt-12 text-center justify-evenly'>
-            <div className='flex items-center my-4 w-max'>
-                <Image
-                    src={wetall}
-                    width={950}
-                    height={850}
-                    quality="100"
-                    className="tall-mob"
-                    alt='Summary image'
-                />
-            </div>          
-            </div>        
+               
             <div className='grid grid-cols-3 p-4 mt-4 mb-10 rounded-md grid-mob '>
                <div
                 className=
@@ -265,7 +250,7 @@ const Home: NextPage = () => {
         <button
          aria-label='Github'>
          <div className='flex items-center px-4 py-3 text-center border rounded-md bg-zinc-950/50 border-white/10 justify-evenly'>
-         <h1 className='text-lg text-orange-500'
+         <h1 className='text-lg text-emerald-600'
                      >
                         Request a Quote Today 
                  </h1>
@@ -423,7 +408,7 @@ const Home: NextPage = () => {
             <div>
             <div className='flex'>                             
                     <h1
-                        className='text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
+                        className='text-4xl tracking-wide text-emerald-600 section-title font-sfprodisplayregular'
                     >
                         Custom Carpentry
                     </h1>
@@ -527,19 +512,19 @@ const Home: NextPage = () => {
           <div className='grid grid-cols-2 py-6 pb-20 border-b carp-grid border-b-white/25 '>
           <div className='p-1 line-order'>
           <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
-          <span className='px-2 text-xs text-orange-500 o-circle'>●</span>  
+          <span className='px-2 text-xs text-emerald-600 o-circle'>●</span>  
             We meet to discuss your needs, ideas , and budget.</p>
             <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500 o-circle'>●</span> 
+            <span className='px-2 text-xs text-emerald-600 o-circle'>●</span> 
             We provide you with a detailed quote and design drawing.</p>
             <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500 o-circle'>●</span>  
+            <span className='px-2 text-xs text-emerald-600 o-circle'>●</span>  
             Upon your acceptance, we provide you with a delivery/installation date. </p>
             <p className='py-3 antialiased text-white line-text text-mediumtext-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500 o-circle'>●</span>  
+            <span className='px-2 text-xs text-emerald-600 o-circle'>●</span>  
             Construction is completed in our shop, to minimize time in your building.</p>
             <p className='py-3 antialiased text-white line-text text-medium text-sfprodisplayregular'>
-            <span className='px-2 text-xs text-orange-500 o-circle'>●</span> 
+            <span className='px-2 text-xs text-emerald-600 o-circle'>●</span> 
             We deliver and/or install your project as promised.</p>
             <div className='flex mt-2 '
               
@@ -552,7 +537,7 @@ const Home: NextPage = () => {
          <div className='flex items-center px-4 py-3 text-center border rounded-md hidden-mobile bg-zinc-950/50 border-white/10 justify-evenly'>
          <h1 className='text-lg text-white'
                      >
-                       <span className='px-2 text-xs text-orange-500'>●</span>  Request a Quote Today 
+                       <span className='px-2 text-xs text-emerald-600'>●</span>  Request a Quote Today 
                  </h1>
          </div>
                 
@@ -692,7 +677,7 @@ const Home: NextPage = () => {
           </div> 
           
           <div className='py-4 border rounded-sm margin-mobile bg-zinc-950/90 border-white/25'><p className='flex items-center justify-center text-lg text-center text-white range-1 font-sfprodisplayregular'>We work with a range of wood and other materials,</p>
-          <p className='flex items-center justify-center text-center text-orange-500 text-md font-sfprodisplayregular range-2'> including:</p>
+          <p className='flex items-center justify-center text-center text-emerald-600 text-md font-sfprodisplayregular range-2'> including:</p>
           <div className=''>
             
          
@@ -792,7 +777,7 @@ const Home: NextPage = () => {
         <div className='px-2 py-4 '>
         <div className='flex'>                             
                     <h1
-                        className='pb-1 text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
+                        className='pb-1 text-4xl tracking-wide text-emerald-600 section-title font-sfprodisplayregular'
                     >
                         Home Improvement
                     </h1>
@@ -816,7 +801,7 @@ const Home: NextPage = () => {
          <div className='flex items-center px-4 py-3 text-center border rounded-md bg-zinc-950/50 border-white/10 justify-evenly'>
          <h1 className='text-lg text-white'
                      >
-                       <span className='px-2 text-xs text-orange-500'>●</span>  Request a Quote Today 
+                       <span className='px-2 text-xs text-emerald-600'>●</span>  Request a Quote Today 
                  </h1>
          </div>
                 
@@ -954,7 +939,7 @@ const Home: NextPage = () => {
 
              </div>
             <div className='py-4 border rounded-sm bg-zinc-950/90 border-white/25'><p className='flex items-center justify-center text-lg text-center text-white range-1 font-sfprodisplayregular'>We work with a range of wood and other materials,</p>
-          <p className='flex items-center justify-center text-center text-orange-500 range-2 text-md font-sfprodisplayregular'> including:</p>
+          <p className='flex items-center justify-center text-center text-emerald-600 range-2 text-md font-sfprodisplayregular'> including:</p>
           <div className=''>
             
          
@@ -1023,7 +1008,7 @@ const Home: NextPage = () => {
 <div className='hidden-mobile' >
 <div className='flex '>                             
         <h1
-         className='py-4 text-4xl tracking-wide text-orange-500 section-title font-sfprodisplayregular'
+         className='py-4 text-4xl tracking-wide text-emerald-600 section-title font-sfprodisplayregular'
         >
             Contact Us
         </h1>

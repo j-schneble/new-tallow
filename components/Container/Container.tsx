@@ -28,7 +28,7 @@ export default function Container({
   footer = true,
   back,
   children,
-  title = 'Callowhill',
+  title = 'Tallowhill',
   description = 'Develop.',
 
   
@@ -36,8 +36,8 @@ export default function Container({
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
   const meta = {
-    title: "Callowhill",
-    description: "Callowhill Home Services",
+    title: "Tallowhill",
+    description: "Tallowhill Home Services",
     type: 'website',
   }
   const scrolled = useScroll(50);
@@ -48,7 +48,7 @@ export default function Container({
         className={cn(
        
           'text-primary',
-          'relative h-full min-h-screen bg-black w-full',
+          'relative h-full min-h-screen bg-zinc-950 w-full',
           'flex flex-col',
           'motion-reduce:transition-none motion-reduce:transform-none'
         )}
@@ -58,7 +58,7 @@ export default function Container({
 
         
 
-   <nav className='sticky top-0 containerElement bg-black border-b border-b-white/25  flex nav-mob justify-between z-[50] w-full mx-auto '>
+   <nav className='sticky top-0 containerElement bg-zinc-950 border-b border-b-white/25  flex nav-mob justify-between z-[50] w-full mx-auto '>
    <div
        
       >
@@ -73,7 +73,7 @@ export default function Container({
                 className="nav-img"
                 alt='Summary image'
             />
-            <h1 className=' nav-name'> Callowhill Home Services </h1>
+            <h1 className=' nav-name'> Tallowhill Home Services </h1>
           </Link>
           <div>
             
@@ -85,10 +85,10 @@ export default function Container({
           </div>
            <div className='flex flex-row mt-4 mr-8 space-x-6 item-center '>
             <p className='text-lg font-light text-white hidden-mobile font-sfprodisplayregular'>
-              CALL US AT <span className='px-2 text-lg font-medium text-orange-500 font-sfprodisplayregular'>(404)-402-4404</span>
+              CALL US AT <span className='px-2 text-lg font-medium text-emerald-600 font-sfprodisplayregular'>(404)-402-4404</span>
             </p>
           <a
-                  href='https://www.instagram.com/callowhillhomeservices/'
+                  href='https://www.instagram.com/'
                   className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
@@ -97,7 +97,7 @@ export default function Container({
                   <RiInstagramLine className='h-auto transition-all duration-200 rounded-sm fill-current nav-icon text-zinc-500 w-7 ' />
                 </a>   
                 <a
-                  href='https://callowhillhomeservices.com/about/'
+                  href='https://facebook.com/'
                   className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
@@ -120,7 +120,7 @@ export default function Container({
               )}
             >
              
-             <div className='flex flex-col gap-6 bg-black'>           
+             <div className='flex flex-col gap-6 bg-zinc-950'>           
               {children}
             </div>
             {footer && (

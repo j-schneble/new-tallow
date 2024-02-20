@@ -79,7 +79,7 @@ const Contact = () => {
             <div className='flex items-center text-center justify-evenly '>
                
                     <SlideFade in offsetX={80}>
-                        <div className='flex items-center text-center justify-evenly bg-zinc-800'>
+                        <div className='flex items-center text-center justify-evenly bg-zinc-950'>
                             <div className='rounded-sm bg-white/90'
                               
                              
